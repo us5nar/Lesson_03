@@ -3,3 +3,5 @@ c:\users\nice lab\documents\visual studio 2015\Projects\Lesson3\Lesson3\bin\Debu
 c:\users\nice lab\documents\visual studio 2015\Projects\Lesson3\Lesson3\obj\Debug\Lesson3.csprojResolveAssemblyReference.cache
 c:\users\nice lab\documents\visual studio 2015\Projects\Lesson3\Lesson3\obj\Debug\Lesson3.exe
 c:\users\nice lab\documents\visual studio 2015\Projects\Lesson3\Lesson3\obj\Debug\Lesson3.pdb
+D:\Documents\Cources\Lesson_03\Lesson3\obj\Debug\Lesson3.exe
+D:\Documents\Cources\Lesson_03\Lesson3\obj\Debug\Lesson3.pdb
