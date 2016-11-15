@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Lesson3
 {
@@ -8,10 +6,34 @@ namespace Lesson3
     {
         static void Main(string[] args)
         {
-            //int Array
-                        //Console.WriteLine("{0}   {1}",int.TryParse(Console.ReadLine(),out q), q);
-            Console.WriteLine("{0} was entered",ReadValue("Enter the digit "));
+            int ArrLength;
+            int ArrMin = 0;
+            int ArrMax = 0;
+            ArrLength = ReadValue("Enter the table lenth > ");
+            int[] InputArray;
+            InputArray = new int[ArrLength];
+            for (int index = 0; index < ArrLength; index++)
+            {//Enter arrays' values
+                InputArray[index] = ReadValue("Enter array value > ");
+                if (index == 0)
+                {   //Initialization of min-max selection
+                    //Before computation of min and max values set both equail to first array element.
+                    ArrMin = InputArray[0];
+                    ArrMax = InputArray[0];
+                }
+                else
+                    {// Other cycles are applicable for checking min and max values
+                    if (ArrMin < InputArray[index])
+                    { ArrMin = InputArray[index]; }
+                    if (ArrMax > InputArray[index])
+                    { ArrMax = InputArray[index]; }
+                }
+            }
+            //Console.WriteLine("{0}   {1}",int.TryParse(Console.ReadLine(),out q), q);
+            //Console.WriteLine("{0} was entered",ReadValue("Enter the table lenth > "));
 
+            Console.WriteLine("Array length = {0}, Min = {1}, Max = {2}", ArrLength, ArrMin, ArrMax);
+            Console.WriteLine("Press any key to exit.");
             Console.ReadKey(false);
         }
         static int ReadValue (string Caption)
