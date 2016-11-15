@@ -29,9 +29,7 @@ namespace Lesson3
                     { ArrMax = InputArray[index]; }
                 }
             }
-            //Console.WriteLine("{0}   {1}",int.TryParse(Console.ReadLine(),out q), q);
-            //Console.WriteLine("{0} was entered",ReadValue("Enter the table lenth > "));
-
+            // Display the results
             Console.WriteLine("Array length = {0}, Min = {1}, Max = {2}", ArrLength, ArrMin, ArrMax);
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey(false);
