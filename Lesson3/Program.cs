@@ -23,9 +23,9 @@ namespace Lesson3
                 }
                 else
                     {// Other cycles are applicable for checking min and max values
-                    if (ArrMin < InputArray[index])
+                    if (ArrMin > InputArray[index])
                     { ArrMin = InputArray[index]; }
-                    if (ArrMax > InputArray[index])
+                    if (ArrMax < InputArray[index])
                     { ArrMax = InputArray[index]; }
                 }
             }
