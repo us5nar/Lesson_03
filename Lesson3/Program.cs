@@ -6,14 +6,22 @@ namespace Lesson3
     {
         static void Main(string[] args)
         {
+            //Set console properties, just for curiosity
+            Console.Title = "Anton Bielov Lesson 03";
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Clear();
+            //Initialize variables
             int ArrLength;
             int ArrMin = 0;
             int ArrMax = 0;
-            ArrLength = ReadValue("Enter the table lenth > ");
             int[] InputArray;
+
+            ArrLength = ReadValue("Enter the table lenth > ");
             InputArray = new int[ArrLength];
+
             for (int index = 0; index < ArrLength; index++)
-            {//Enter arrays' values
+            {//Enter array's values
                 InputArray[index] = ReadValue("Enter array value > ");
                 if (index == 0)
                 {   //Initialization of min-max selection
@@ -30,6 +38,7 @@ namespace Lesson3
                 }
             }
             // Display the results
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Array length = {0}, Min = {1}, Max = {2}", ArrLength, ArrMin, ArrMax);
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey(false);
@@ -46,7 +55,5 @@ namespace Lesson3
             }
             return RetNumber;
         }
-
-
     }
 }
